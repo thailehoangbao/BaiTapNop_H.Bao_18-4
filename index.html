@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <!-- Bài 1  -->
     <div class="container">
         <div class="form-group">
             <h3 class="text-center">Bài Tập 1 : Tính Điểm Thi</h3>
@@ -73,7 +74,97 @@
         </div>
         <div class="alert alert-danger" id="result1"></div>
     </div>
+    <hr>
+    <!-- Bài 2  -->
+    <div class="container">
+        <div class="form-group">
+            <h3 class="text-center">Bài Tập 2 : Tính Tiền Điện</h3>
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for=""></label>
+                        <input type="text" name="" id="hoTen" class="form-control" placeholder="Nhập Họ Tên">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for=""></label>
+                        <input type="number" name="" id="soKw" class="form-control" placeholder="Nhập Số Kw">
+                    </div>
+                </div>
 
+            </div>
+            <button class="btn btn-outline-success w-25" id="btnTinhTienDien">Kết Quả</button>
+        </div>
+        <div class="alert alert-danger" id="result2"></div>
+    </div>
+    <hr>
+    <!-- Bài 3  -->
+    <div class="container">
+        <div class="form-group">
+            <h3 class="text-center">Bài Tập 3 : Tính Tiền Thuế</h3>
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for=""></label>
+                        <input type="text" name="" id="hoVaTen" class="form-control" placeholder="Nhập Họ Tên">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for=""></label>
+                        <input type="number" name="" id="tongThuNhapNam" class="form-control" placeholder="Tổng Thu Nhập Năm">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for=""></label>
+                        <input type="number" name="" id="soNguoiPhuThuoc" class="form-control" placeholder="Số Người Phụ Thuộc">
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-outline-success w-25" id="btnTinhThue">Kết Quả</button>
+        </div>
+        <div class="alert alert-danger" id="result3"></div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="form-group">
+            <h3 class="text-center">Bài Tập 4 : Tính Tiền Cáp</h3>
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                      <label for=""></label>
+                      <select class="form-control" name="" id="mySelect" onchange="myFunction()">
+                        <option value="0">Chọn loại khách hàng</option>
+                        <option value="1">Cá Nhân</option>
+                        <option value="2" onchange="myFunction()">Doanh Nghiệp</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for=""></label>
+                        <input type="text" name="" id="maKhachHang" class="form-control" placeholder="Mã Khách Hàng">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for=""></label>
+                        <input type="number" name="" id="soKenhCaoCap" class="form-control" placeholder="Số Kênh Cao Cấp">
+                    </div>
+                </div>
+                <div class="col-4" id="showKenh">
+                    <div class="form-group">
+                        <label for=""></label>
+                        <input type="number" name="" id="soKetNoi" class="form-control" placeholder="Số Kết Nối">
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-outline-success w-25" id="btnTinhTienCap">Kết Quả</button>
+        </div>
+        <div class="alert alert-danger" id="result4"></div>
+    </div>
 
 
 
